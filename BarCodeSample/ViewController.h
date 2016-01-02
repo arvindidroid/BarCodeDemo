@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBarSDK.h"
+@interface ViewController : UIViewController <ZBarReaderDelegate>
 
-@interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *btnScan;
 
 @end
 
